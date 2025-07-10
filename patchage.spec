@@ -21,7 +21,7 @@ BuildRequires:	pkgconfig(jack)
 %description
 This is a modular patch bay for audio and MIDI systems based on Jack and Alsa.
 
-%files -f %{name}.lang
+%files
 %license COPYING
 %doc AUTHORS NEWS
 %{_mandir}/man1/%{name}.1.*
@@ -51,5 +51,3 @@ This is a modular patch bay for audio and MIDI systems based on Jack and Alsa.
 desktop-file-edit --set-key=Exec \
 								--set-value=%{name} \
 								%{buildroot}%{_datadir}/applications/%{name}.desktop
-
-%find_lang %{name}
